@@ -1,0 +1,18 @@
+---
+
+import { SITE_TITLE, SITE_DESCRIPTION } from "../const";
+
+import "../../src/css/global.css";
+import BaseHead from "../components/BaseHead.astro";
+
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

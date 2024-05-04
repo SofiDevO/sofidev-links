@@ -1,0 +1,27 @@
+---
+import "@fontsource-variable/montserrat";
+import Layout from "../layouts/Layout.astro";
+import Boton from "../components/Boton.astro";
+import ThemeIcon from "../components/ThemeIcon.astro";
+import ProfilePicture from "../components/Header.astro";
+import Header from "../components/Header.astro";
+import LatestYoutube from "../components/LatestYoutube.astro";
+---
+
+<Layout>
+  <ThemeIcon/>
+  <main>
+    <Header/>
+    <Boton/>
+    <LatestYoutube/>
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+</style>
