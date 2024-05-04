@@ -1,9 +1,10 @@
 ---
+import Kofi from "./Kofi.astro";
+
 
 ---
 
 <script >
-
    const theme = (() => {
     if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
       return localStorage.getItem("theme");
@@ -48,6 +49,7 @@
         ></path>
       </svg>
     </button>
+    <Kofi/>
 </header>
 
 <style>
@@ -55,6 +57,7 @@
         padding: .8rem;
         display: flex;
         justify-content: end;
+        position: relative;
     }
   #themeToggle {
     border: 0;
