@@ -6,5 +6,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   site: "https://allmylinks-ten.vercel.app/",
-  prefetch: true
+  prefetch: true,
 });
