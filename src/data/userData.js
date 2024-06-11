@@ -48,7 +48,7 @@ const userLinks = [
     },
     {
         title: "Únete a Discord",
-        link:"https://discord.gg/wjERezH2",
+        link:"https://discord.gg/VYDj8pvfE4",
         icon:"ic:outline-discord"
     },
 
