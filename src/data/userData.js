@@ -57,6 +57,11 @@ const userLinks = [
     link: "https://discord.gg/VYDj8pvfE4",
     icon: "ic:outline-discord",
   },
+  {
+    title: "MERCH",
+    link: "https://sofidev.myspreadshop.com/",
+    icon: "map:clothing-store",
+  },
 ];
 
 export { userData, userLinks, socialLinks };
