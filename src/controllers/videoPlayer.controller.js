@@ -1,6 +1,7 @@
 import { fetchYouTubeVideos } from '@services/youtubeService';
 const channelId = "UC36_js-krsAHAEAWpEDhHtw"; // Youtube Channel ID
 
+const loader = document.querySelector(".heart__loader");
 const initializeModal = (iframe, videoData) => {
   const videoNumber = iframe.getAttribute("vnum");
   const video = videoData[videoNumber];
@@ -13,6 +14,7 @@ export const loadVideo = async (iframe) => {
   try {
     const videoData = await fetchYouTubeVideos(channelId);
     initializeModal(iframe, videoData);
+    loader.style.display = "none";
   } catch (error) {
     console.error("Error loading video:", error);
   }

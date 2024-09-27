@@ -1,5 +1,6 @@
 import { YT_API_KEY } from 'astro:env/client';
 
+
 export const fetchYouTubeVideos = async (channelId) => {
   const API_key = `${YT_API_KEY}`; //in order to get your free public API_key, you will need to create an acc. in https://rss2json.com/
   const channelURL = encodeURIComponent(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`);
@@ -14,6 +15,7 @@ export const fetchYouTubeVideos = async (channelId) => {
     const result = await response.json();
     if (result.items && result.items.length > 0) {
       return result.items;
+
     } else {
       throw new Error("No videos found in the feed.");
     }
