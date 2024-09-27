@@ -12,10 +12,10 @@ export default defineConfig({
   site: "https://links.itssofi.dev/",
   prefetch: true,
   output: "server",
-  // adapter: vercel(),
-  adapter: node({
-    mode: "standalone",
-  }),
+  adapter: vercel(),
+  // adapter: node({
+  //   mode: "standalone",
+  // }),
   experimental: {
     env: {
       schema: {
