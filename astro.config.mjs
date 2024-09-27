@@ -1,6 +1,8 @@
-import { defineConfig, envField } from "astro/config";
+import { defineConfig,envField } from 'astro/config';
 
 import react from "@astrojs/react";
+
+import node from "@astrojs/node";
 
 import vercel from "@astrojs/vercel/serverless";
 
@@ -11,9 +13,6 @@ export default defineConfig({
   prefetch: true,
   output: "server",
   adapter: vercel(),
-  // adapter: node({
-  //   mode: "standalone",
-  // }),
   experimental: {
     env: {
       schema: {
