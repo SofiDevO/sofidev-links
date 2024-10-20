@@ -49,13 +49,13 @@ import { socialLinks } from "../data/userData.js";
       .social__btn:hover span {
         display: block;
             padding: 0.3rem 8px;
-            background: #00000075;
+            background: #0000009f;
             min-width: 37px;
             text-align: center;
             position: absolute;
             top: 76%;
             color: white;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-weight: 500;
             border-radius: 7px;
             z-index: 20;
@@ -85,5 +85,16 @@ import { socialLinks } from "../data/userData.js";
   }
   :global(.dark) .iconify {
     color: var(--cards);
+  }
+  :global(.dark) .social__btn:hover .iconify {
+    color:aqua;
+  }
+  :global(.dark) span {
+    font-size: 1.3rem;
+    color:aqua;
+  }
+  :global(.dark) .social__btn:hover span {
+    color:black;
+    background-color: aqua;
   }
 </style>
