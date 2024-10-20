@@ -2,7 +2,7 @@ const userData = [
   {
     userName: "Sofia Osorio",
     userDesc: "Web Developer",
-    userPic: "https://github.com/SofiDevO.png",
+    userPic: "https://storage.ko-fi.com/cdn/useruploads/225a7e3c-6720-4442-a54e-0408e7424fca_8d8b4a08-03c9-4f7e-bff9-d87720332474.png",
     userPicDark: "/img/sofi_funko.jpg",
   },
 ];
@@ -42,20 +42,19 @@ const userLinks = [
     icon: "ant-design:code-filled",
   },
   {
-    title: "Mi Blog",
-    link: "https://itssofi.dev/blog",
-    icon: "carbon:blog",
-  },
-  {
-    title: "Canal de SofiDev",
-    link: "https://www.youtube.com/channel/UC36_js-krsAHAEAWpEDhHtw",
-    icon: "mingcute:youtube-fill",
-  },
-
-  {
     title: "Únete a Discord",
     link: "https://discord.gg/VYDj8pvfE4",
     icon: "ic:outline-discord",
+  },
+  {
+    title: "Mi Blog",
+    link: "https://blog.itssofi.dev",
+    icon: "carbon:blog",
+  },
+  {
+    title: "Suscribe to SofiDev",
+    link: "https://www.youtube.com/channel/UC36_js-krsAHAEAWpEDhHtw",
+    icon: "mingcute:youtube-fill",
   },
   {
     title: "MERCH",

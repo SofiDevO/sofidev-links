@@ -14,7 +14,7 @@
 
 --font-montserrat:'Montserrat Variable', sans-serif;
 /* Darkmode */
---bg-color-dark: #18181b;
+--bg-color-dark: #0b0b0b;
 }
 *{
     box-sizing: border-box;
@@ -26,12 +26,12 @@ html{
 }
 
 body{
-    background-color: var(--secundary-color);
+    /* background-color: black; */
     font-family: var(--font-montserrat);
 }
 
 
 .dark body {
-    background-color: var(--bg-color-dark);
+
     color: --secundary-color;
   }
