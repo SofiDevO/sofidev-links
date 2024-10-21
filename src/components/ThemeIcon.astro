@@ -35,92 +35,8 @@ import Kofi from "./Kofi.astro";
 
 <header class="header">
   <button id="themeToggle">
-    <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        class="sun"
-        fill-rule="evenodd"
-        d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm12-7a.8.8 0 0 1-.8.8h-2.4a.8.8 0 0 1 0-1.6h2.4a.8.8 0 0 1 .8.8zM4 12a.8.8 0 0 1-.8.8H.8a.8.8 0 0 1 0-1.6h2.5a.8.8 0 0 1 .8.8zm16.5-8.5a.8.8 0 0 1 0 1l-1.8 1.8a.8.8 0 0 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM6.3 17.7a.8.8 0 0 1 0 1l-1.7 1.8a.8.8 0 1 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM12 0a.8.8 0 0 1 .8.8v2.5a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 12 0zm0 20a.8.8 0 0 1 .8.8v2.4a.8.8 0 0 1-1.6 0v-2.4a.8.8 0 0 1 .8-.8zM3.5 3.5a.8.8 0 0 1 1 0l1.8 1.8a.8.8 0 1 1-1 1L3.5 4.6a.8.8 0 0 1 0-1zm14.2 14.2a.8.8 0 0 1 1 0l1.8 1.7a.8.8 0 0 1-1 1l-1.8-1.7a.8.8 0 0 1 0-1z"
-      ></path>
-
-      <g  class="moon" fill="#00ffee" fill-opacity="0"
-        ><path
-        class="moon"
-          d="m15.22 6.03l2.53-1.94L14.56 4L13.5 1l-1.06 3l-3.19.09l2.53 1.94l-.91 3.06l2.63-1.81l2.63 1.81z"
-          ><animate
-          class="moon"
-            id="lineMdMoonLoop0"
-            fill="freeze"
-            attributeName="fill-opacity"
-            begin="0.7s;lineMdMoonLoop0.begin+6s"
-            dur="0.4s"
-            values="0;1"></animate><animate
-            fill="freeze"
-            attributeName="fill-opacity"
-            begin="lineMdMoonLoop0.begin+2.2s"
-            dur="0.4s"
-            values="1;0"></animate></path
-        ><path
-          class="moon"
-          d="M13.61 5.25L15.25 4l-2.06-.05L12.5 2l-.69 1.95L9.75 4l1.64 1.25l-.59 1.98l1.7-1.17l1.7 1.17z"
-          ><animate
-          class="moon"
-            fill="freeze"
-            attributeName="fill-opacity"
-            begin="lineMdMoonLoop0.begin+3s"
-            dur="0.4s"
-            values="0;1"></animate><animate
-            fill="freeze"
-            attributeName="fill-opacity"
-            begin="lineMdMoonLoop0.begin+5.2s"
-            dur="0.4s"
-            values="1;0"></animate></path
-        ><path
-          class="moon"
-          d="M19.61 12.25L21.25 11l-2.06-.05L18.5 9l-.69 1.95l-2.06.05l1.64 1.25l-.59 1.98l1.7-1.17l1.7 1.17z"
-          ><animate
-            fill="freeze"
-            attributeName="fill-opacity"
-            begin="lineMdMoonLoop0.begin+0.4s"
-            dur="0.4s"
-            values="0;1"></animate><animate
-            fill="freeze"
-            attributeName="fill-opacity"
-            begin="lineMdMoonLoop0.begin+2.8s"
-            dur="0.4s"
-            values="1;0"></animate></path
-        ><path
-        class="moon"
-          d="m20.828 9.731l1.876-1.439l-2.366-.067L19.552 6l-.786 2.225l-2.366.067l1.876 1.439L17.601 12l1.951-1.342L21.503 12z"
-          ><animate
-            fill="freeze"
-            attributeName="fill-opacity"
-            begin="lineMdMoonLoop0.begin+3.4s"
-            dur="0.4s"
-            values="0;1"></animate><animate
-            fill="freeze"
-            attributeName="fill-opacity"
-            begin="lineMdMoonLoop0.begin+5.6s"
-            dur="0.4s"
-            values="1;0"></animate></path
-        ></g
-      ><path
-      class="moon"
-        fill="none"
-        stroke="#00ffee"
-        stroke-dasharray="56"
-        stroke-dashoffset="56"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="0.8"
-        d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"
-        ><animate
-        class="moon"
-          fill="freeze"
-          attributeName="stroke-dashoffset"
-          dur="0.6s"
-          values="56;0"></animate></path
-      >
-    </svg>
+    <iconify-icon class="sun" icon="line-md:moon-alt-to-sunny-outline-loop-transition" width="25" height="25"></iconify-icon>
+    <iconify-icon class="moon" icon="line-md:sunny-outline-to-moon-transition" width="25" height="25"></iconify-icon>
   </button>
 
   <style>
@@ -137,15 +53,16 @@ import Kofi from "./Kofi.astro";
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #0000005a;
-      backdrop-filter: blur(20px);
+      background: #0000003f;
+      backdrop-filter: blur(14px);
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border: 1px solid rgb(0, 0, 0);
+      overflow: hidden;
     }
     .sun {
-      fill: rgb(255, 244, 124);
+      color: rgb(255, 170, 23);
     }
     .moon {
       fill: transparent;
@@ -155,11 +72,11 @@ import Kofi from "./Kofi.astro";
       border: 1px solid aqua;
     }
     :global(.dark) .sun {
-      fill: transparent;
+      display: none;
     }
     :global(.dark) .moon {
       display: flex;
-      fill: aqua;
+      color: aqua;
     }
   </style>
 
