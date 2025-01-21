@@ -1,0 +1,39 @@
+{
+  "name": "show-your-links",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "release": "release-it"
+  },
+  "dependencies": {
+    "@astrojs/node": "^8.3.4",
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/vercel": "^7.8.1",
+    "@fontsource-variable/montserrat": "^5.0.19",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "astro": "^4.15.9",
+    "dotenv": "^16.4.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-toastify": "^10.0.5"
+  },
+  "description": "```sh npm create astro@latest -- --template basics ```",
+  "main": "index.astro",
+  "keywords": [
+    "astro",
+    "allMyLinks",
+    "sofidev"
+  ],
+  "author": "SofiDev",
+  "license": "MIT",
+  "devDependencies": {
+    "release-it": "^17.6.0"
+  }
+}

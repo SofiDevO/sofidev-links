@@ -1,0 +1,102 @@
+---
+import { socialLinks } from "../data/userData.js";
+---
+
+<div class="social">
+  {
+    socialLinks.map((icono) => (
+      <a
+        class="social__btn"
+        href={icono.socialUl}
+        target="_blank"
+        rel="nofollow noreferrer noopener"
+        data-astro-prefetch
+      >
+        <iconify-icon
+          icon={icono.socialIcon}
+          width="25"
+          height="25"
+          class="iconify"
+        />
+        <span>{icono.socialName}</span>
+      </a>
+    ))
+  }
+</div>
+<style>
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 295px;
+    margin-top: 20px;
+    gap: 10px;
+    .social__btn {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      text-decoration: none;
+      color: var(--text-highligth);
+      min-height: 48px;
+      gap: 10px;
+    }
+    @media screen and (min-width: 768px) {
+      span {
+        display: none;
+      }
+      .social__btn:hover span {
+        display: block;
+            padding: 0.3rem 8px;
+            background: #0000009f;
+            min-width: 37px;
+            text-align: center;
+            position: absolute;
+            top: 76%;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 500;
+            border-radius: 7px;
+            z-index: 20;
+            &&::before {
+              content: "";
+              position: absolute;
+              bottom: 100%;
+              left: 50%;
+              border-width: 5px;
+              border-style: solid;
+              transform: translateX(-50%);
+              border-color: transparent transparent #0000009f transparent;
+            }
+      }
+    }
+  }
+
+  .iconify {
+    color: rgb(92, 92, 92);
+    transition: color 0.4s ease;
+    &&:hover {
+      color: var(--button-flat);
+    }
+    &&:active {
+      color: var(--button-active);
+    }
+  }
+  :global(.dark) .iconify {
+    color: var(--cards);
+  }
+  :global(.dark) .social__btn:hover .iconify {
+    color:aqua;
+  }
+  :global(.dark) span {
+    font-size: 1.3rem;
+    color:aqua;
+  }
+  :global(.dark) .social__btn:hover span {
+    color:black;
+    background-color: aqua;
+
+  }
+
+</style>

@@ -1,0 +1,95 @@
+---
+import "../css/animations.css";
+---
+
+<script>
+  const tooltipMessage = document.querySelector(".kofi__tooltip");
+  const cofiLink = document.querySelector(".kofi__link");
+
+  cofiLink.addEventListener("mouseover", (event) => {
+    tooltipMessage.classList.add("tooltip__animation");
+
+    tooltipMessage.textContent = "Invítame un café ❤️";
+  });
+  cofiLink.addEventListener("mouseleave", (event) => {
+    tooltipMessage.classList.remove("tooltip__animation");
+    tooltipMessage.textContent = "";
+  });
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 3 || document.documentElement.scrollTop > 3) {
+      tooltipMessage.classList.add("tooltip__animation");
+
+      tooltipMessage.textContent = "Invítame un café ❤️";
+    } else {
+      tooltipMessage.textContent = "Será la próxima Supongo 🥹";
+      setTimeout(() => {
+        tooltipMessage.textContent = "";
+        tooltipMessage.classList.remove("tooltip__animation");
+      }, 4000);
+    }
+  }
+</script>
+
+<article class="kofi__container">
+  <a
+    class="kofi__link"
+    href="https://ko-fi.com/S6S5IFKIG"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img class="kofi__img" src="/img/kofi.webp" alt="kofi-button" />
+  </a>
+  <span class="kofi__tooltip"></span>
+</article>
+
+<style>
+  .kofi__container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: calc(90dvh - 17px);
+    right: 9%;
+  }
+
+  .kofi__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background: #8e51f68b;
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    padding: 2rem;
+    -webkit-animation: heartbeat 1.9s ease-in-out 5s infinite both;
+    animation: heartbeat 1.9s ease-in-out 5s infinite both;
+  }
+  .kofi__img {
+    width: 55px;
+    object-fit: cover;
+  }
+  .kofi__tooltip {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    border-radius: 12px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transform: scaleX(0.4);
+    transform-origin: 100% 100%;
+    background-color: var(--cards);
+  }
+  .tooltip__animation {
+    padding: 6px 5px;
+    transform: scaleX(1);
+  }
+</style>

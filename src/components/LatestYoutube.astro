@@ -1,0 +1,42 @@
+---
+
+---
+
+<script>
+  import { loadVideo } from "@utils/videoPlayer.controller";
+</script>
+
+<div class="vid__container">
+  <h2 class="vid__title">≥ My latest Video ❤️</h2>
+  <img class="heart__loader" src="./img/loadcat.gif" alt="loader" />
+  <iframe data-vnum="0" class="latestVideoEmbed" allowfullscreen id="ytchannel">
+  </iframe>
+</div>
+
+<style>
+  iframe {
+    border-width: 0px;
+  }
+  .vid__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    height: auto;
+  }
+  .latestVideoEmbed {
+    width: 100%;
+    min-height: 30rem;
+    padding: 3rem;
+    min-width: 337px;
+  }
+  .vid__title {
+    padding-top: 2rem;
+  }
+
+  :global(.dark) .vid__container {
+    color: aqua;
+  }
+</style>
