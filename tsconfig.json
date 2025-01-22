@@ -12,6 +12,7 @@
 			"@data/*": ["src/data/*"],
       		"@services/*": ["src/services/*"],
 			"@img/*": ["public/img/*"],
+			"@css/*": ["src/css/*"],
 		}
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "show-your-links",
+  "name": "sofidev-links",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,20 +11,13 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@astrojs/node": "^8.3.4",
-    "@astrojs/react": "^3.6.2",
-    "@astrojs/rss": "^4.0.7",
-    "@astrojs/vercel": "^7.8.1",
+    "@astrojs/rss": "^4.0.11",
     "@fontsource-variable/montserrat": "^5.0.19",
     "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.0",
-    "astro": "^4.15.9",
-    "dotenv": "^16.4.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-toastify": "^10.0.5"
+    "astro": "^5.1.8",
+    "dotenv": "^16.4.5"
   },
-  "description": "```sh npm create astro@latest -- --template basics ```",
+  "description": "Show your links",
   "main": "index.astro",
   "keywords": [
     "astro",

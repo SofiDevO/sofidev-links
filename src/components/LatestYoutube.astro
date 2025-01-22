@@ -14,9 +14,6 @@
 </div>
 
 <style>
-  iframe {
-    border-width: 0px;
-  }
   .vid__container {
     width: 100%;
     display: flex;
@@ -25,15 +22,18 @@
     font-size: 2rem;
     font-weight: bolder;
     height: auto;
+    padding: 1rem;
   }
   .latestVideoEmbed {
-    width: 100%;
+    border-width: 0px;
+    overflow: hidden;
+    border-radius:12px;
+    width: calc(100% - 3rem);
     min-height: 30rem;
-    padding: 3rem;
-    min-width: 337px;
+    min-width: 303px;
   }
   .vid__title {
-    padding-top: 2rem;
+    margin: 1rem 0;
   }
 
   :global(.dark) .vid__container {
